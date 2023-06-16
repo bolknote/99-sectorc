@@ -29,12 +29,10 @@ def make_shifter():
         if pos == 3 and v == 0xF:
             pos = 1
             gr += 1
-            ret = (v, gr, )
         else:
-            ret = (v, gr, )
             pos += 1
 
-        return ret
+        return (v, gr, )
     return shifter
 
 shifter = make_shifter()
