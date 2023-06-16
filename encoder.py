@@ -10,7 +10,7 @@ def conv(ch):
     try:
         yield t0.index(ch) + 1
     except ValueError:
-        yield 15
+        yield 0xF
         yield t1.index(ch) + 1
 
 
